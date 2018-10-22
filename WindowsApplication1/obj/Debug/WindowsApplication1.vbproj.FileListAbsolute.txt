@@ -1,0 +1,33 @@
+c:\users\chris\documents\visual studio 2015\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+c:\users\chris\documents\visual studio 2015\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+c:\users\chris\documents\visual studio 2015\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+c:\users\chris\documents\visual studio 2015\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+c:\users\chris\documents\visual studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+c:\users\chris\documents\visual studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+c:\users\chris\documents\visual studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+c:\users\chris\documents\visual studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+c:\users\chris\documents\visual studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+c:\users\chris\documents\visual studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+c:\users\chris\documents\visual studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.SecondForm.resources
+c:\users\chris\documents\visual studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.StudentsByExamScores.resources
+c:\users\chris\documents\visual studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.StudentsByGpa.resources
+C:\Users\Chris\Documents\Visual Studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbprojAssemblyReference.cache
+C:\Users\Chris\Documents\Visual Studio 2015\Projects\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.CoreCompileInputs.cache
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbprojAssemblyReference.cache
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.cache
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.CoreCompileInputs.cache
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Admin_Main.resources
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Student_Main.resources
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\bin\Debug\StudentData_Chris.mdf
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\bin\Debug\StudentData_Chris_log.ldf
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Admin_ChangeExamScores.resources
+C:\Users\orekoyaO1\Desktop\New Folder\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Admin_ViewStudentData.resources
