@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StudentData_ChrisDataSet" targetNamespace="http://tempuri.org/StudentData_ChrisDataSet.xsd" xmlns:mstns="http://tempuri.org/StudentData_ChrisDataSet.xsd" xmlns="http://tempuri.org/StudentData_ChrisDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="StudentData_ChrisConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="StudentData_ChrisConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsApp1.My.MySettings.GlobalReference.Default.StudentData_ChrisConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="studentData_ChrisTableAdapter" GeneratorDataComponentClassName="studentData_ChrisTableAdapter" Name="studentData_Chris" UserDataComponentName="studentData_ChrisTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectName="dbo.studentData_Chris" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        student_ID, student_Name, Exam1, Exam2, Exam3, Exam4, [Class AVG], CourseId, GPA
+FROM            studentData_Chris</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="student_Name" DataSetColumn="student_Name" />
+              <Mapping SourceColumn="Exam1" DataSetColumn="Exam1" />
+              <Mapping SourceColumn="Exam2" DataSetColumn="Exam2" />
+              <Mapping SourceColumn="Exam3" DataSetColumn="Exam3" />
+              <Mapping SourceColumn="student_ID" DataSetColumn="student_ID" />
+              <Mapping SourceColumn="Class AVG" DataSetColumn="Class AVG" />
+              <Mapping SourceColumn="Exam4" DataSetColumn="Exam4" />
+              <Mapping SourceColumn="CourseId" DataSetColumn="CourseId" />
+              <Mapping SourceColumn="GPA" DataSetColumn="GPA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetTableData" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetTableData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetTableData" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        courseData.courseId, courseData.Subject, studentData_Chris.student_ID, studentData_Chris.student_Name, studentData_Chris.Exam1, studentData_Chris.Exam2, studentData_Chris.Exam3, studentData_Chris.Exam4, 
+                         studentData_Chris.[Class AVG], studentData_Chris.CourseId AS Expr2, studentData_Chris.GPA 
+FROM            studentData_Chris INNER JOIN
+                         courseData ON studentData_Chris.CourseId = courseData.courseId</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="courseId" DataSetColumn="courseId" />
+              <Mapping SourceColumn="Subject" DataSetColumn="Subject" />
+              <Mapping SourceColumn="student_ID" DataSetColumn="student_ID" />
+              <Mapping SourceColumn="student_Name" DataSetColumn="student_Name" />
+              <Mapping SourceColumn="Exam1" DataSetColumn="Exam1" />
+              <Mapping SourceColumn="Exam2" DataSetColumn="Exam2" />
+              <Mapping SourceColumn="Exam3" DataSetColumn="Exam3" />
+              <Mapping SourceColumn="Exam4" DataSetColumn="Exam4" />
+              <Mapping SourceColumn="Class AVG" DataSetColumn="Class AVG" />
+              <Mapping SourceColumn="Expr2" DataSetColumn="Expr2" />
+              <Mapping SourceColumn="GPA" DataSetColumn="GPA1" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByName" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBystudentName" GeneratorSourceName="FillByName" GetMethodModifier="Public" GetMethodName="GetDataBystudentName" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBystudentName" UserSourceName="FillByName">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        courseData.courseId, courseData.Subject, studentData_Chris.student_ID, studentData_Chris.student_Name, studentData_Chris.Exam1, studentData_Chris.Exam2, studentData_Chris.Exam3, studentData_Chris.Exam4, 
+                         studentData_Chris.[Class AVG], studentData_Chris.CourseId AS Expr2, studentData_Chris.GPA
+FROM            studentData_Chris INNER JOIN
+                         courseData ON studentData_Chris.CourseId = courseData.courseId
+ORDER BY studentData_Chris.student_ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillENG" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetENG" GeneratorSourceName="FillENG" GetMethodModifier="Public" GetMethodName="GetENG" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetENG" UserSourceName="FillENG">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        courseData.courseId, courseData.Subject, studentData_Chris.student_ID, studentData_Chris.student_Name, studentData_Chris.Exam1, studentData_Chris.Exam2, studentData_Chris.Exam3, studentData_Chris.Exam4, 
+                         studentData_Chris.[Class AVG], studentData_Chris.CourseId AS Expr2, studentData_Chris.GPA
+FROM            studentData_Chris CROSS JOIN
+                         LoginDatabase INNER JOIN
+                         courseData ON studentData_Chris.CourseId = courseData.courseId AND courseData.Subject = 'ENG'
+AND      (LoginDatabase.isLoggedIn = 1)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillENG_student" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy6" GeneratorSourceName="FillENG_student" GetMethodModifier="Public" GetMethodName="GetDataBy6" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="FillENG_student">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        courseData.courseId, courseData.Subject, studentData_Chris.student_ID, studentData_Chris.student_Name, studentData_Chris.Exam1, studentData_Chris.Exam2, studentData_Chris.Exam3, studentData_Chris.Exam4, 
+                         studentData_Chris.[Class AVG], studentData_Chris.CourseId AS Expr2, studentData_Chris.GPA
+FROM            studentData_Chris CROSS JOIN
+                         LoginDatabase INNER JOIN
+                         courseData ON studentData_Chris.CourseId = courseData.courseId AND courseData.Subject = 'ENG' AND LoginDatabase.isLoggedIn = 1 AND studentData_Chris.student_Name = @Param10</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param10" ColumnName="student_Name" DataSourceName="[E:\BACKUP\WINDOWSAPPLICATION1\WINDOWSAPP1\STUDENTDATA_CHRIS.MDF].dbo.studentData_Chris" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@Param10" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="student_Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillHIST" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetHIST" GeneratorSourceName="FillHIST" GetMethodModifier="Public" GetMethodName="GetHIST" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetHIST" UserSourceName="FillHIST">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        courseData.courseId, courseData.Subject, studentData_Chris.student_ID, studentData_Chris.student_Name, studentData_Chris.Exam1, studentData_Chris.Exam2, studentData_Chris.Exam3, studentData_Chris.Exam4, 
+                         studentData_Chris.[Class AVG], studentData_Chris.CourseId AS Expr2, studentData_Chris.GPA
+FROM            studentData_Chris CROSS JOIN
+                         LoginDatabase INNER JOIN
+                         courseData ON studentData_Chris.CourseId = courseData.courseId AND courseData.Subject = 'HIST'
+AND     (LoginDatabase.isLoggedIn = 1)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillHIST_student" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy9" GeneratorSourceName="FillHIST_student" GetMethodModifier="Public" GetMethodName="GetDataBy9" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy9" UserSourceName="FillHIST_student">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        courseData.courseId, courseData.Subject, studentData_Chris.student_ID, studentData_Chris.student_Name, studentData_Chris.Exam1, studentData_Chris.Exam2, studentData_Chris.Exam3, studentData_Chris.Exam4, 
+                         studentData_Chris.[Class AVG], studentData_Chris.CourseId AS Expr2, studentData_Chris.GPA
+FROM            studentData_Chris CROSS JOIN
+                         LoginDatabase INNER JOIN
+                         courseData ON studentData_Chris.CourseId = courseData.courseId AND courseData.Subject = 'HIST' AND LoginDatabase.isLoggedIn = 1 AND studentData_Chris.student_Name = @Param10</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param10" ColumnName="student_Name" DataSourceName="[E:\BACKUP\WINDOWSAPPLICATION1\WINDOWSAPP1\STUDENTDATA_CHRIS.MDF].dbo.studentData_Chris" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@Param10" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="student_Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillMATH" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetMATH" GeneratorSourceName="FillMATH" GetMethodModifier="Public" GetMethodName="GetMATH" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetMATH" UserSourceName="FillMATH">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        courseData.courseId, courseData.Subject, studentData_Chris.student_ID, studentData_Chris.student_Name, studentData_Chris.Exam1, studentData_Chris.Exam2, studentData_Chris.Exam3, studentData_Chris.Exam4, 
+                         studentData_Chris.[Class AVG], studentData_Chris.CourseId AS Expr2, studentData_Chris.GPA
+FROM            studentData_Chris CROSS JOIN
+                         LoginDatabase INNER JOIN
+                         courseData ON studentData_Chris.CourseId = courseData.courseId AND courseData.Subject = 'MATH'
+AND        (LoginDatabase.isLoggedIn = 1)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillMATH_student" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy7" GeneratorSourceName="FillMATH_student" GetMethodModifier="Public" GetMethodName="GetDataBy7" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy7" UserSourceName="FillMATH_student">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        courseData.courseId, courseData.Subject, studentData_Chris.student_ID, studentData_Chris.student_Name, studentData_Chris.Exam1, studentData_Chris.Exam2, studentData_Chris.Exam3, studentData_Chris.Exam4, 
+                         studentData_Chris.[Class AVG], studentData_Chris.CourseId AS Expr2, studentData_Chris.GPA
+FROM            studentData_Chris CROSS JOIN
+                         LoginDatabase INNER JOIN
+                         courseData ON studentData_Chris.CourseId = courseData.courseId AND courseData.Subject = 'MATH' AND LoginDatabase.isLoggedIn = 1 AND studentData_Chris.student_Name = @Param10</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param10" ColumnName="student_Name" DataSourceName="[E:\BACKUP\WINDOWSAPPLICATION1\WINDOWSAPP1\STUDENTDATA_CHRIS.MDF].dbo.studentData_Chris" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@Param10" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="student_Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillSCI" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetSCI" GeneratorSourceName="FillSCI" GetMethodModifier="Public" GetMethodName="GetSCI" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetSCI" UserSourceName="FillSCI">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        courseData.courseId, courseData.Subject, studentData_Chris.student_ID, studentData_Chris.student_Name, studentData_Chris.Exam1, studentData_Chris.Exam2, studentData_Chris.Exam3, studentData_Chris.Exam4, 
+                         studentData_Chris.[Class AVG], studentData_Chris.CourseId AS Expr2, studentData_Chris.GPA
+FROM            studentData_Chris CROSS JOIN
+                         LoginDatabase INNER JOIN
+                         courseData ON studentData_Chris.CourseId = courseData.courseId AND courseData.Subject = 'SCI'
+AND        (LoginDatabase.isLoggedIn = 1)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillSCI_student" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy8" GeneratorSourceName="FillSCI_student" GetMethodModifier="Public" GetMethodName="GetDataBy8" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy8" UserSourceName="FillSCI_student">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        courseData.courseId, courseData.Subject, studentData_Chris.student_ID, studentData_Chris.student_Name, studentData_Chris.Exam1, studentData_Chris.Exam2, studentData_Chris.Exam3, studentData_Chris.Exam4, 
+                         studentData_Chris.[Class AVG], studentData_Chris.CourseId AS Expr2, studentData_Chris.GPA
+FROM            studentData_Chris CROSS JOIN
+                         LoginDatabase INNER JOIN
+                         courseData ON studentData_Chris.CourseId = courseData.courseId AND courseData.Subject = 'SCI' AND LoginDatabase.isLoggedIn = 1 AND studentData_Chris.student_Name = @Param10</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param10" ColumnName="student_Name" DataSourceName="[E:\BACKUP\WINDOWSAPPLICATION1\WINDOWSAPP1\STUDENTDATA_CHRIS.MDF].dbo.studentData_Chris" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@Param10" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="student_Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectName="dbo.studentData_Chris" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="SelectLoggedInStudent" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy4" GeneratorSourceName="SelectLoggedInStudent" GetMethodModifier="Public" GetMethodName="GetDataBy4" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="SelectLoggedInStudent">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        studentData_Chris.student_Name
+FROM            studentData_Chris INNER JOIN
+                         LoginDatabase ON studentData_Chris.student_Name = LoginDatabase.[USER]
+WHERE        (LoginDatabase.isLoggedIn = 1)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="setInitialLoginState" Modifier="Public" Name="setInitialLoginState" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="setInitialLoginState">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       LoginDatabase
+SET                isLoggedIn = 0
+WHERE        (Id &gt; 0)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="setLoginState" Modifier="Public" Name="setLoginState" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="setLoginState">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       LoginDatabase
+SET                isLoggedIn = 1
+WHERE        ([USER] = @Param8)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param8" ColumnName="USER" DataSourceName="[E:\BACKUP\WINDOWSAPPLICATION1\WINDOWSAPP1\STUDENTDATA_CHRIS.MDF].dbo.LoginDatabase" DataTypeServer="nchar(10)" DbType="String" Direction="Input" ParameterName="@Param8" Precision="0" ProviderType="NChar" Scale="0" Size="10" SourceColumn="USER" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="setLogOutState" Modifier="Public" Name="setLogOutState" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="setLogOutState">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       LoginDatabase
+SET                isLoggedIn = 0
+WHERE        ([USER] = @Param8)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param8" ColumnName="USER" DataSourceName="[C:\USERS\CHRIS\DESKTOP\NEW FOLDER\WINDOWSAPPLICATION1\WINDOWSAPP1\STUDENTDATA_CHRIS.MDF].dbo.LoginDatabase" DataTypeServer="nchar(10)" DbType="String" Direction="Input" ParameterName="@Param8" Precision="0" ProviderType="NChar" Scale="0" Size="10" SourceColumn="USER" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateAVG" Modifier="Public" Name="UpdateAVG" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="UpdateAVG">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       studentData_Chris
+SET                [Class AVG] = (Exam1 + Exam2 + Exam3 + Exam4) / 4
+WHERE        (Id &gt; 0)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateGPA" Modifier="Public" Name="UpdateGPA" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="UpdateGPA">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       studentData_Chris
+SET                GPA = (Exam1 + Exam2 + Exam3 + Exam4) / 4 * 4.0
+WHERE        (Id IS NOT NULL)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LoginDatabaseTableAdapter" GeneratorDataComponentClassName="LoginDatabaseTableAdapter" Name="LoginDatabase" UserDataComponentName="LoginDatabaseTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="StudentData_ChrisConnectionString (MySettings)" DbObjectName="dbo.LoginDatabase" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT LoginDatabase.[USER], LoginDatabase.isLoggedIn
+FROM            LoginDatabase INNER JOIN
+                         studentData_Chris ON studentData_Chris.student_Name = LoginDatabase.[USER]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="USER" DataSetColumn="USER" />
+              <Mapping SourceColumn="isLoggedIn" DataSetColumn="isLoggedIn" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StudentData_ChrisDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="StudentData_ChrisDataSet" msprop:Generator_UserDSName="StudentData_ChrisDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="studentData_Chris" msprop:Generator_TableClassName="studentData_ChrisDataTable" msprop:Generator_TableVarName="tablestudentData_Chris" msprop:Generator_TablePropName="studentData_Chris" msprop:Generator_RowDeletingName="studentData_ChrisRowDeleting" msprop:Generator_RowChangingName="studentData_ChrisRowChanging" msprop:Generator_RowEvHandlerName="studentData_ChrisRowChangeEventHandler" msprop:Generator_RowDeletedName="studentData_ChrisRowDeleted" msprop:Generator_UserTableName="studentData_Chris" msprop:Generator_RowChangedName="studentData_ChrisRowChanged" msprop:Generator_RowEvArgName="studentData_ChrisRowChangeEvent" msprop:Generator_RowClassName="studentData_ChrisRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="student_Name" msprop:Generator_ColumnVarNameInTable="columnstudent_Name" msprop:Generator_ColumnPropNameInRow="student_Name" msprop:Generator_ColumnPropNameInTable="student_NameColumn" msprop:Generator_UserColumnName="student_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Exam1" msprop:Generator_ColumnVarNameInTable="columnExam1" msprop:Generator_ColumnPropNameInRow="Exam1" msprop:Generator_ColumnPropNameInTable="Exam1Column" msprop:Generator_UserColumnName="Exam1" type="xs:int" minOccurs="0" />
+              <xs:element name="Exam2" msprop:Generator_ColumnVarNameInTable="columnExam2" msprop:Generator_ColumnPropNameInRow="Exam2" msprop:Generator_ColumnPropNameInTable="Exam2Column" msprop:Generator_UserColumnName="Exam2" type="xs:int" minOccurs="0" />
+              <xs:element name="Exam3" msprop:Generator_ColumnVarNameInTable="columnExam3" msprop:Generator_ColumnPropNameInRow="Exam3" msprop:Generator_ColumnPropNameInTable="Exam3Column" msprop:Generator_UserColumnName="Exam3" type="xs:int" minOccurs="0" />
+              <xs:element name="student_ID" msprop:Generator_ColumnVarNameInTable="columnstudent_ID" msprop:Generator_ColumnPropNameInRow="student_ID" msprop:Generator_ColumnPropNameInTable="student_IDColumn" msprop:Generator_UserColumnName="student_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Class_x0020_AVG" msprop:Generator_ColumnVarNameInTable="columnClass_AVG" msprop:Generator_ColumnPropNameInRow="Class_AVG" msprop:Generator_ColumnPropNameInTable="Class_AVGColumn" msprop:Generator_UserColumnName="Class AVG" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Exam4" msprop:Generator_ColumnVarNameInTable="columnExam4" msprop:Generator_ColumnPropNameInRow="Exam4" msprop:Generator_ColumnPropNameInTable="Exam4Column" msprop:Generator_UserColumnName="Exam4" type="xs:int" minOccurs="0" />
+              <xs:element name="CourseId" msprop:Generator_ColumnVarNameInTable="columnCourseId" msprop:Generator_ColumnPropNameInRow="CourseId" msprop:Generator_ColumnPropNameInTable="CourseIdColumn" msprop:Generator_UserColumnName="CourseId" type="xs:int" minOccurs="0" />
+              <xs:element name="GPA" msprop:Generator_ColumnVarNameInTable="columnGPA" msprop:Generator_ColumnPropNameInRow="GPA" msprop:Generator_ColumnPropNameInTable="GPAColumn" msprop:Generator_UserColumnName="GPA" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="courseId" msprop:Generator_ColumnVarNameInTable="columncourseId" msprop:Generator_ColumnPropNameInRow="courseId" msprop:Generator_ColumnPropNameInTable="courseIdColumn" msprop:Generator_UserColumnName="courseId" type="xs:int" minOccurs="0" />
+              <xs:element name="Subject" msprop:Generator_ColumnVarNameInTable="columnSubject" msprop:Generator_ColumnPropNameInRow="Subject" msprop:Generator_ColumnPropNameInTable="SubjectColumn" msprop:Generator_UserColumnName="Subject" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="student_ID" msprop:Generator_ColumnVarNameInTable="columnstudent_ID" msprop:Generator_ColumnPropNameInRow="student_ID" msprop:Generator_ColumnPropNameInTable="student_IDColumn" msprop:Generator_UserColumnName="student_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="student_Name" msprop:Generator_ColumnVarNameInTable="columnstudent_Name" msprop:Generator_ColumnPropNameInRow="student_Name" msprop:Generator_ColumnPropNameInTable="student_NameColumn" msprop:Generator_UserColumnName="student_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Exam1" msprop:Generator_ColumnVarNameInTable="columnExam1" msprop:Generator_ColumnPropNameInRow="Exam1" msprop:Generator_ColumnPropNameInTable="Exam1Column" msprop:Generator_UserColumnName="Exam1" type="xs:int" minOccurs="0" />
+              <xs:element name="Exam2" msprop:Generator_ColumnVarNameInTable="columnExam2" msprop:Generator_ColumnPropNameInRow="Exam2" msprop:Generator_ColumnPropNameInTable="Exam2Column" msprop:Generator_UserColumnName="Exam2" type="xs:int" minOccurs="0" />
+              <xs:element name="Exam3" msprop:Generator_ColumnVarNameInTable="columnExam3" msprop:Generator_ColumnPropNameInRow="Exam3" msprop:Generator_ColumnPropNameInTable="Exam3Column" msprop:Generator_UserColumnName="Exam3" type="xs:int" minOccurs="0" />
+              <xs:element name="Exam4" msprop:Generator_ColumnVarNameInTable="columnExam4" msprop:Generator_ColumnPropNameInRow="Exam4" msprop:Generator_ColumnPropNameInTable="Exam4Column" msprop:Generator_UserColumnName="Exam4" type="xs:int" minOccurs="0" />
+              <xs:element name="Class_x0020_AVG" msprop:Generator_ColumnVarNameInTable="columnClass_AVG" msprop:Generator_ColumnPropNameInRow="Class_AVG" msprop:Generator_ColumnPropNameInTable="Class_AVGColumn" msprop:Generator_UserColumnName="Class AVG" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Expr2" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_UserColumnName="Expr2" type="xs:int" minOccurs="0" />
+              <xs:element name="GPA" msprop:Generator_ColumnVarNameInTable="columnGPA" msprop:Generator_ColumnPropNameInRow="GPA" msprop:Generator_ColumnPropNameInTable="GPAColumn" msprop:Generator_UserColumnName="GPA" type="xs:int" minOccurs="0" />
+              <xs:element name="GPA1" msdata:Caption="GPA" msprop:Generator_ColumnVarNameInTable="columnGPA1" msprop:Generator_ColumnPropNameInRow="GPA1" msprop:Generator_ColumnPropNameInTable="GPA1Column" msprop:Generator_UserColumnName="GPA1" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LoginDatabase" msprop:Generator_TableClassName="LoginDatabaseDataTable" msprop:Generator_TableVarName="tableLoginDatabase" msprop:Generator_RowChangedName="LoginDatabaseRowChanged" msprop:Generator_TablePropName="LoginDatabase" msprop:Generator_RowDeletingName="LoginDatabaseRowDeleting" msprop:Generator_RowChangingName="LoginDatabaseRowChanging" msprop:Generator_RowEvHandlerName="LoginDatabaseRowChangeEventHandler" msprop:Generator_RowDeletedName="LoginDatabaseRowDeleted" msprop:Generator_RowClassName="LoginDatabaseRow" msprop:Generator_UserTableName="LoginDatabase" msprop:Generator_RowEvArgName="LoginDatabaseRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="USER" msprop:Generator_ColumnVarNameInTable="columnUSER" msprop:Generator_ColumnPropNameInRow="USER" msprop:Generator_ColumnPropNameInTable="USERColumn" msprop:Generator_UserColumnName="USER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="isLoggedIn" msprop:Generator_ColumnVarNameInTable="columnisLoggedIn" msprop:Generator_ColumnPropNameInRow="isLoggedIn" msprop:Generator_ColumnPropNameInTable="isLoggedInColumn" msprop:Generator_UserColumnName="isLoggedIn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
